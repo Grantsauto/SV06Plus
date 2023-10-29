@@ -1,5 +1,0 @@
-#*#
-#*# [axis_twist_compensation]
-#*# z_compensations = 0.040000, 0.048750, 0.037500, -0.001250, -0.060000, -0.030000, -0.035000
-#*# compensation_start_x = 27.0
-#*# compensation_end_x = 295.0
