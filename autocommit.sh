@@ -32,7 +32,7 @@ fluidd_folder=~/fluidd
 
 ### The branch of the repository that you want to save your config
 ### By default that is 'main'
-branch=main
+branch=master
 
 #####################################################################
 #####################################################################
