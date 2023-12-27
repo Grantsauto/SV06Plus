@@ -1,5 +1,3 @@
-# [include mmu/base/*.cfg]
-# [include mmu/optional/client_macros.cfg]
 
 # host MCU service is preinstalled and ready to use with:
 
@@ -54,7 +52,6 @@ gcode:
   brightness BRIGHTNESS=-25
   Start_Tones
   SET_FAN_SPEED FAN=mcuFan SPEED=0.7
-  SET_FAN_SPEED FAN=tr_fan SPEED=0.75
 initial_duration: 5
 
 ##########
@@ -73,6 +70,12 @@ max_temp: 100
 [temperature_sensor Manta]
 sensor_type: temperature_mcu
 sensor_mcu: mcu
+min_temp: 0
+max_temp: 100
+
+[temperature_sensor Pico]
+sensor_type: temperature_mcu
+sensor_mcu: tr
 min_temp: 0
 max_temp: 100
 
@@ -224,11 +227,11 @@ sense_resistor: 0.110
 stealthchop_threshold: 0
 interpolate: False
 
-# [filament_switch_sensor Filament_Sensor]
-# switch_pin: PC5
-# pause_on_runout: True
-# event_delay: 3.5
-# pause_delay: 2.5
+[filament_switch_sensor Filament_Sensor]
+switch_pin: PC5
+pause_on_runout: True
+event_delay: 3.5
+pause_delay: 2.5
 
 ##############################################
 ####firmware_retraction####
