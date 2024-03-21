@@ -107,13 +107,13 @@ primary_branch = main
 
 [update_manager mobileraker]
 type = git_repo
-path = /home/biqu/mobileraker_companion
+path = ~/mobileraker_companion
 origin = https://github.com/Clon1998/mobileraker_companion.git
 primary_branch = main
 managed_services = mobileraker
-env = /home/biqu/mobileraker-env/bin/python
+virtualenv = ~/mobileraker-env
 requirements = scripts/mobileraker-requirements.txt
-install_script = scripts/install-mobileraker-companion.sh
+install_script = scripts/install.sh
 
 [update_manager trad_rack]
 type = git_repo
