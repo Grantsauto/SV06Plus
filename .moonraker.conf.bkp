@@ -122,17 +122,6 @@ origin = https://github.com/Annex-Engineering/TradRack.git
 primary_branch = main
 managed_services = klipper
 
-[update_manager happy-hare]
-type = git_repo
-path = ~/Happy-Hare
-origin = https://github.com/moggieuk/Happy-Hare.git
-primary_branch = main
-install_script = install.sh
-managed_services = klipper
-
-[mmu_server]
-enable_file_preprocessor = True
-
 [update_manager led_effect]
 type = git_repo
 path = ~/klipper-led_effect
