@@ -1,0 +1,4 @@
+[delayed_gcode RELOAD_LANE]
+initial_duration: 0.1
+gcode: 
+  {printer.save_variables.variables.currentlane}
