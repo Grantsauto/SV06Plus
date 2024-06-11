@@ -1,4 +1,6 @@
 [delayed_gcode RELOAD_LANE]
-initial_duration: 0.1
+initial_duration: 7
 gcode: 
-  {printer.save_variables.variables.currentlane}
+    {% set svv = printer.save_variables.variables %}
+    {% set currentlane = svv.currentlane %}
+    M117 {currentlane}
