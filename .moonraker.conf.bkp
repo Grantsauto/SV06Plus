@@ -115,25 +115,11 @@ virtualenv = ~/mobileraker-env
 requirements = scripts/mobileraker-requirements.txt
 install_script = scripts/install.sh
 
-[update_manager trad_rack]
-type = git_repo
-path = ~/trad_rack_klippy_module
-origin = https://github.com/Annex-Engineering/TradRack.git
-primary_branch = main
-managed_services = klipper
-
 [update_manager led_effect]
 type = git_repo
 path = ~/klipper-led_effect
 origin = https://github.com/julianschill/klipper-led_effect.git
 is_system_service = False
-
-[update_manager belay]
-type = git_repo
-path = ~/belay_klippy_module
-origin = https://github.com/Annex-Engineering/Belay.git
-primary_branch = main
-managed_services = klipper
 
 [update_manager Klippain-ShakeTune]
 type = git_repo
