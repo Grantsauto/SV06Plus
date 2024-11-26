@@ -64,14 +64,14 @@ gcode:
   brightness BRIGHTNESS=5
   Start_Tones
   SET_FAN_SPEED FAN=mcuFan SPEED=0.7
-  SET_FAN_SPEED FAN=mmu_fan SPEED=0.75
+  SET_FAN_SPEED FAN=tr_fan SPEED=0.75
   DELAY S=2
   M117
 initial_duration: 2
 
 
-# [save_variables]
-#  filename: ~/printer_data/config/variables.cfg
+[save_variables]
+ filename: ~/printer_data/config/variables.cfg
  
 [display_status]  
 
@@ -458,7 +458,6 @@ aliases:
     # EXP1 header
     EXP1_1=PC1, EXP1_3=PC3, EXP1_5=PC0, EXP1_7=PA2, EXP1_9=<GND>,
     EXP1_2=PC2,  EXP1_4=<RST>, EXP1_6=PA0, EXP1_8=PA1, EXP1_10=<5V>
-
 
 #[bltouch]
 #sensor_pin: PA6
