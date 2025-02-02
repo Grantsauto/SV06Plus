@@ -1,0 +1,8 @@
+cd /tmp
+unzip /home/biqu/mainsail-latest.zip.zip
+
+cd /home/biqu
+mv mainsail mainsail.backup
+mkdir mainsail
+(cd mainsail && unzip /tmp/mainsail-latest.zip)
+sudo systemctl restart nginx
